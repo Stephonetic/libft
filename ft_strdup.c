@@ -1,31 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 19:31:06 by shannema          #+#    #+#             */
-/*   Updated: 2025/11/02 22:05:59 by shannema         ###   ########.fr       */
+/*   Created: 2025/11/02 16:32:36 by shannema          #+#    #+#             */
+/*   Updated: 2025/11/02 21:52:42 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+// #include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stddef.h>
+// char *strdup(const char *s)
+// {
+// 	char *str;
+// 	// str = 0;
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-
-size_t	ft_strlen(const char *s);
-void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t size);
-void	*ft_memcpy(void *dest, const void *src, size_t size);
-
-#endif
+// 	str = "Hallo"
+// 	[H][a][l][l][o]
+// }
+// str_bzero = "\0\0\0\0\0"
+// [\0][\0][\0][\0][\0]
