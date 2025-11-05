@@ -6,7 +6,7 @@
 #    By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/18 15:39:56 by shannema          #+#    #+#              #
-#    Updated: 2025/11/02 21:22:10 by shannema         ###   ########.fr        #
+#    Updated: 2025/11/05 15:46:27 by shannema         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,8 +21,8 @@ PART1 = ft_isalpha.c \
 		ft_memset.c \
 		ft_bzero.c \
 		ft_memcpy.c \
-# 		ft_memmove.c \
-# 		ft_strlcpy.c \
+		ft_memmove.c \
+		ft_strlcpy.c \
 # 		ft_strlcat.c \
 # 		ft_toupper.c \
 # 		ft_tolower.c \
@@ -58,7 +58,7 @@ PART1 = ft_isalpha.c \
 # 		ft_lstiter.c \
 # 		ft_lstmap.c
 
-SRC = $(PART1) $(PART2)
+SRC = $(PART1) #$(PART2)
 
 OBJECTS       = $(SRC:.c=.o)
 BONUS_OBJECTS = $(BONUS:.c=.o)
@@ -71,8 +71,8 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
 
-bonus: $(OBJECTS) $(BONUS_OBJECTS)
-	ar rcs $(NAME) $(OBJECTS) $(BONUS_OBJECTS)
+# bonus: $(OBJECTS) $(BONUS_OBJECTS)
+# 	ar rcs $(NAME) $(OBJECTS) $(BONUS_OBJECTS)
 
 clean:
 	rm -f $(OBJECTS) $(BONUS_OBJECTS)
