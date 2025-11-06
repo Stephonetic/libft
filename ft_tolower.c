@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/02 16:32:36 by shannema          #+#    #+#             */
-/*   Updated: 2025/11/06 18:34:42 by shannema         ###   ########.fr       */
+/*   Created: 2025/11/06 17:59:24 by shannema          #+#    #+#             */
+/*   Updated: 2025/11/06 18:11:07 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 
-// char *strdup(const char *s)
-// {
-// 	char *str;
-// 	// str = 0;
-
-// 	str = "Hallo"
-// 	[H][a][l][l][o]
-// }
-// str_bzero = "\0\0\0\0\0"
-// [\0][\0][\0][\0][\0]
+int	ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
+}

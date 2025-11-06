@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/02 16:32:36 by shannema          #+#    #+#             */
-/*   Updated: 2025/11/06 18:34:42 by shannema         ###   ########.fr       */
+/*   Created: 2025/11/06 17:57:05 by shannema          #+#    #+#             */
+/*   Updated: 2025/11/06 18:11:12 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 
-// char *strdup(const char *s)
-// {
-// 	char *str;
-// 	// str = 0;
-
-// 	str = "Hallo"
-// 	[H][a][l][l][o]
-// }
-// str_bzero = "\0\0\0\0\0"
-// [\0][\0][\0][\0][\0]
+int	ft_toupper(int c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
+}

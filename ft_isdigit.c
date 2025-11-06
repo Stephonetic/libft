@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 13:53:51 by shannema          #+#    #+#             */
-/*   Updated: 2025/10/25 20:33:56 by shannema         ###   ########.fr       */
+/*   Updated: 2025/11/06 14:18:43 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-
 // # include <stdio.h>
 
 // int main(void)

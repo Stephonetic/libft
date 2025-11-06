@@ -1,42 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/03 18:13:36 by shannema          #+#    #+#             */
-/*   Updated: 2025/11/06 15:10:59 by shannema         ###   ########.fr       */
+/*   Created: 2025/11/06 15:25:44 by shannema          #+#    #+#             */
+/*   Updated: 2025/11/06 17:26:50 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	char		*ptr_dest;
-	const char	*ptr_src;
-	size_t		i;
+	size_t	src_len;
+	size_t	dst_len;
 
-	if (dest == NULL && src == NULL)
-		return (NULL);
-	ptr_dest = (char *) dest;
-	ptr_src = (const char *) src;
-	i = 0;
-	if (ptr_dest < ptr_src)
-	{
-		while (i < n)
-		{
-			ptr_dest[i] = ptr_src[i];
-			i++;
-		}	
-	}
+	src_len = ft_strlen(src);
+	dst_len = ft_strlen(dst);
+	if (dst_len >= size)
+		dst_len = size;
+	if (dst_len == size)
+		return (size + src_len);
+	if (src_len < size - dst_len)
+		ft_memcpy(dst + dst_len, src, src_len + 1);
 	else
 	{
-		while (n-- > 0)
-		{
-			ptr_dest[n] = ptr_src[n];
-		}
+		ft_memcpy(dst + dst_len, src, size - dst_len - 1);
+		dst[size - 1] = '\0';
 	}
-	return (dest);
+	return (dst_len + src_len);
 }
