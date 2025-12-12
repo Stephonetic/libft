@@ -6,7 +6,7 @@
 #    By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/18 15:39:56 by shannema          #+#    #+#              #
-#    Updated: 2025/11/06 19:19:17 by shannema         ###   ########.fr        #
+#    Updated: 2025/12/10 18:02:02 by shannema         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,13 +28,14 @@ PART1 = ft_isalpha.c \
 		ft_tolower.c \
 		ft_strchr.c \
 		ft_strrchr.c \
+		ft_strnstr.c \
 		ft_strncmp.c \
 		ft_memchr.c \
 		ft_memcmp.c \
 		ft_strnstr.c \
 		ft_atoi.c \
-# 		ft_calloc.c \
-# 		ft_strdup.c \
+		ft_calloc.c \
+		ft_strdup.c \
 # 		ft_substr.c \
 # 		ft_strjoin.c \
 # 		ft_strtrim.c \
