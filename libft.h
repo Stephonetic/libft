@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:31:06 by shannema          #+#    #+#             */
-/*   Updated: 2025/12/10 18:03:41 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/02 17:07:24 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,5 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 char	*strdup(const char *s);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_atoi(const char *nptr);
-
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 18:04:20 by shannema          #+#    #+#             */
-/*   Updated: 2025/12/12 16:46:45 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/02 17:05:22 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	little_len = ft_strlen(little);
 	if (little_len == 0)
-		return ((char *)big);//if needle empty string, return haystack
+		return ((char *)big);
 	i = 0;
 	while (i <= len - little_len && big[i])
 	{
 		if (ft_strncmp(&big[i], little, little_len) == 0)
-			return ((char *)&big[i]); //otherwise a pointer to the first character of the first occurrence of needle is returned.
+			return ((char *)&big[i]);
 		i++;
 	}
-	return (NULL);//if needle occurs nowhere in haystack, NULL is returned; 
+	return (NULL);
 }
