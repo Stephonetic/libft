@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 18:04:20 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/02 17:05:22 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/06 21:39:48 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	if (little_len == 0)
 		return ((char *)big);
 	i = 0;
-	while (i <= len - little_len && big[i])
+	while (i < len - little_len && big[i])
 	{
 		if (ft_strncmp(&big[i], little, little_len) == 0)
 			return ((char *)&big[i]);

@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 16:32:36 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/03 21:00:45 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/06 21:18:36 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*strdup(const char *s)
 	int		index;
 
 	index = 0;
-	str = malloc(sizeof(char)*ft_strlen(s + 1));
+	str = malloc(sizeof(char*)*ft_strlen(s + 1));
 	while (s[index])
 	{
 		str[index] = s[index];

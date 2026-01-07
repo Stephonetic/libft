@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 20:44:57 by shannema          #+#    #+#             */
-/*   Updated: 2025/10/27 19:06:30 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/03 21:04:04 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
 // #include <string.h>
 // #include <stdio.h>
 // int	main(void)
