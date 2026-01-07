@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 16:42:05 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/06 21:21:22 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/07 04:26:10 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	while (i < len)
 	{
-		sub[i] = s[start + 1];
+		sub[i] = s[start + i];
 		i++;
 	}
 	sub[i] = '\0';

@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 17:31:16 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/02 17:05:53 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/07 04:18:42 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ int	ft_atoi(const char *nptr)
 	index = 0;
 	sign = 1;
 	nbr = 0;
-	while (nptr[index] && (nptr[index] <= 32))
+	while (nptr[index] && (nptr[index] == ' ' || nptr[index] == '\t'
+			|| nptr[index] == '\n' || nptr[index] == '\v'
+			|| nptr[index] == '\f' || nptr[index] == '\r'))
 		index++;
 	if (nptr[index] && (nptr[index] == '-' || nptr[index] == '+'))
 	{
