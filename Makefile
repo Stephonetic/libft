@@ -6,7 +6,7 @@
 #    By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/18 15:39:56 by shannema          #+#    #+#              #
-#    Updated: 2026/01/03 19:13:19 by shannema         ###   ########.fr        #
+#    Updated: 2026/01/11 22:34:32 by shannema         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,8 +38,8 @@ PART1 = ft_isalpha.c \
 		ft_strdup.c \
 		ft_substr.c \
 		ft_strjoin.c \
+		ft_strtrim.c \
 
-# 		ft_strtrim.c \
 # 		ft_split.c \
 # 		ft_itoa.c \
 # 		ft_itoa.c \

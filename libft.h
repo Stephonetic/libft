@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:31:06 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/07 04:15:38 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/11 22:36:28 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <ctype.h>
 # include <stdlib.h>
 # include <stddef.h>
+# include <stdio.h>
 # include <string.h>
 # include <unistd.h>
 
@@ -45,5 +46,6 @@ char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_atoi(const char *nptr);
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif
