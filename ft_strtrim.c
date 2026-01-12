@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/11 22:06:46 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/11 22:46:33 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/12 03:52:51 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1 || !set)
 		return (NULL);
-	start = 0; //initialize start like index with 0
+	start = 0;
 	while (s1[start] && ft_strchr(set, s1[start]))
-		start++; //we increase the characters from start 
+		start++;
 	end = ft_strlen(s1);
 	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
-	trim = malloc(end - start + 1);//Returns a new malloc’d string containing the trimmed result.
+	trim = malloc(end - start + 1);
 	if (!trim)
 		return (NULL);
 	ft_strlcpy (trim, s1 + start, end - start + 1);
