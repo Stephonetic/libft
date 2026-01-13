@@ -6,7 +6,7 @@
 #    By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/18 15:39:56 by shannema          #+#    #+#              #
-#    Updated: 2026/01/12 22:03:45 by shannema         ###   ########.fr        #
+#    Updated: 2026/01/13 22:43:16 by shannema         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,14 +41,12 @@ PART1 = ft_isalpha.c \
 		ft_strtrim.c \
 		ft_split.c \
 		ft_itoa.c \
-
-# 		ft_itoa.c \
-# 		ft_strmapi.c \
-# 		ft_striteri.c \
-# 		ft_putchar_fd.c \
-# 		ft_putstr_fd.c \
-# 		ft_putendl_fd.c \
-# 		ft_putnbr_fd.c \
+		ft_strmapi.c \
+		ft_striteri.c \
+		ft_putchar_fd.c \
+		ft_putstr_fd.c \
+		ft_putendl_fd.c \
+		ft_putnbr_fd.c \
 
 # BONUS = ft_lstnew.c \
 # 		ft_lstadd_front.c \
