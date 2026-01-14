@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_wordcount.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/06 18:23:42 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/14 22:21:57 by shannema         ###   ########.fr       */
+/*   Created: 2026/01/12 00:03:18 by shannema          #+#    #+#             */
+/*   Updated: 2026/01/12 00:28:04 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+static int	ft_wordcount(char const *s, char c)
 {
+	int	count;
 	int	i;
 
+	count = 0;
 	i = 0;
+
 	while (s[i] != '\0')
 	{
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
-		i++;
+		while (s[i] == c)
+			i++;
+		if (s[i] != '\0')
+		{
+			count++;
+			while (s[i] != '\0' && s[i] != c)
+				i++;
+		}
 	}
-	if ((char)c == '\0')
-		return ((char *)(s + i));
-	return (NULL);
+	return (count);
 }
-
-// int	main()
-// {
-// 	char *str = "TEST 123 ,c sdasd  r3ewd";
-// 	printf("%s\n", ft_strchr(str, 'a'));
-// }
