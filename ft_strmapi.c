@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 23:20:07 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/13 20:40:17 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/15 02:35:56 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*res;
+	char			*res;
 	unsigned int	i;
 
 	if (!s || !f)
 		return (NULL);
-	res = (char*)malloc(ft_strlen(s) + 1); //allocate a new buffer of length (ft_strlen(s) + 1) using malloc)
-	if (!res)
-		return (NULL);//return NULL on failure
-	i = 0;//iterate over s with an unsigned int index i
-	while (s[i])//for each char set res[i] = '\0'
+	res = (char *) malloc (ft_strlen(s) + 1);
+	if (res == NULL)
+		return (NULL);
+	i = 0;
+	while (s[i])
 	{
 		res[i] = f(i, s[i]);
 		i++;
@@ -54,6 +54,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // 	}
 // 	return (0);
 // }
-//then compile and run with:
-//gcc -Wall -Wextra -Werror ft_strmapi.c ft_strlen.c test_strmapi.c -I. -o test_strmapi
-// ./test_strmapi

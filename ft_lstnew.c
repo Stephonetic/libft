@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wordcount.c                                     :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/12 00:03:18 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/15 02:23:03 by shannema         ###   ########.fr       */
+/*   Created: 2026/01/15 02:13:31 by shannema          #+#    #+#             */
+/*   Updated: 2026/01/15 02:16:57 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_wordcount(char const *s, char c)
+t_list	*ft_lstnew(void *content)
 {
-	int	count;
-	int	i;
+	t_list	*list;
 
-	count = 0;
-	i = 0;
-	while (s[i] != '\0')
-	{
-		while (s[i] == c)
-			i++;
-		if (s[i] != '\0')
-		{
-			count++;
-			while (s[i] != '\0' && s[i] != c)
-				i++;
-		}
-	}
-	return (count);
+	list = malloc(sizeof(t_list));
+	if (!list)
+		return (NULL);
+	list->content = content;
+	list->next = NULL;
+	return (list);
 }

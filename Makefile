@@ -6,7 +6,7 @@
 #    By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/18 15:39:56 by shannema          #+#    #+#              #
-#    Updated: 2026/01/13 22:43:16 by shannema         ###   ########.fr        #
+#    Updated: 2026/01/15 02:58:11 by shannema         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,12 +47,11 @@ PART1 = ft_isalpha.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
-
-# BONUS = ft_lstnew.c \
+		ft_lstnew.c \
 # 		ft_lstadd_front.c \
 # 		ft_lstsize.c \
 # 		ft_lstlast.c \
-#         ft_lstadd_back.c \
+#		ft_lstadd_back.c \
 # 		ft_lstdelone.c \
 # 		ft_lstclear.c \
 # 		ft_lstiter.c \
@@ -61,7 +60,7 @@ PART1 = ft_isalpha.c \
 SRC = $(PART1) #$(PART2)
 
 OBJECTS       = $(SRC:.c=.o)
-BONUS_OBJECTS = $(BONUS:.c=.o)
+# BONUS_OBJECTS = $(BONUS:.c=.o)
 
 CC    = cc
 CFLAGS = -Wall -Wextra -Werror

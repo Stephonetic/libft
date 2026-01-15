@@ -6,7 +6,7 @@
 /*   By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 16:32:36 by shannema          #+#    #+#             */
-/*   Updated: 2026/01/12 22:05:13 by shannema         ###   ########.fr       */
+/*   Updated: 2026/01/15 02:24:28 by shannema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ char	*ft_strdup(const char *s)
 {
 	char	*str;
 	int		index;
-
 
 	index = 0;
 	str = malloc(sizeof(char) * (ft_strlen(s) + 1));
