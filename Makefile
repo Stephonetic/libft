@@ -6,7 +6,7 @@
 #    By: shannema <shannema@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/18 15:39:56 by shannema          #+#    #+#              #
-#    Updated: 2026/01/15 02:58:11 by shannema         ###   ########.fr        #
+#    Updated: 2026/01/16 20:26:00 by shannema         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,19 +48,19 @@ PART1 = ft_isalpha.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 		ft_lstnew.c \
-# 		ft_lstadd_front.c \
-# 		ft_lstsize.c \
-# 		ft_lstlast.c \
-#		ft_lstadd_back.c \
-# 		ft_lstdelone.c \
-# 		ft_lstclear.c \
-# 		ft_lstiter.c \
-# 		ft_lstmap.c
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c
 
-SRC = $(PART1) #$(PART2)
+SRC = $(PART1) $(PART2)
 
 OBJECTS       = $(SRC:.c=.o)
-# BONUS_OBJECTS = $(BONUS:.c=.o)
+BONUS_OBJECTS = $(BONUS:.c=.o)
 
 CC    = cc
 CFLAGS = -Wall -Wextra -Werror
@@ -70,8 +70,8 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
 
-# bonus: $(OBJECTS) $(BONUS_OBJECTS)
-# 	ar rcs $(NAME) $(OBJECTS) $(BONUS_OBJECTS)
+bonus: $(OBJECTS) $(BONUS_OBJECTS)
+	ar rcs $(NAME) $(OBJECTS) $(BONUS_OBJECTS)
 
 clean:
 	rm -f $(OBJECTS) $(BONUS_OBJECTS)
