@@ -1,10 +1,2 @@
-SET_DENKWEISE.c
 a.out
-sandbox
-checklist
-ft_split_test.c
-test_ft_strjoin.c
-test_putchar_fd
-test_striteri.c
-vscode
-ft_wordcount.c
+.vscode
